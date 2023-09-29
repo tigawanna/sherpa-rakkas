@@ -1,0 +1,42 @@
+{
+  "name": "sherpa-rakkas",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "rakkas",
+    "build": "rakkas build",
+    "start": "node dist/server",
+    "format": "prettier --write --ignore-unknown src",
+    "test": "pnpm test:typecheck && pnpm test:format && pnpm test:lint && pnpm test:unit",
+    "test:typecheck": "tsc -p tsconfig.json --noEmit",
+    "test:format": "prettier --check --ignore-unknown src",
+    "test:lint": "eslint . --ignore-pattern dist",
+    "test:unit": "vitest run"
+  },
+  "devDependencies": {
+    "@rakkasjs/eslint-config": "0.7.0-next.21",
+    "@types/react": "^18.2.23",
+    "@types/react-dom": "^18.2.8",
+    "eslint": "^8.50.0",
+    "postcss": "^8.4.31",
+    "postcss-preset-mantine": "^1.7.0",
+    "postcss-simple-vars": "^7.0.1",
+    "prettier": "^3.0.3",
+    "rakkasjs": "0.7.0-next.21",
+    "typescript": "^5.2.2",
+    "vite": "^4.4.9",
+    "vite-tsconfig-paths": "^4.2.1",
+    "vitest": "^0.34.6"
+  },
+  "dependencies": {
+    "@mantine/core": "^7.1.0",
+    "@mantine/dates": "^7.1.0",
+    "@mantine/form": "^7.1.0",
+    "@mantine/hooks": "^7.1.0",
+    "@mantine/notifications": "^7.1.0",
+    "@mantine/nprogress": "^7.1.0",
+    "dayjs": "^1.11.10",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
