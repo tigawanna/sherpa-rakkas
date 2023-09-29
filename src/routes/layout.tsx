@@ -1,4 +1,3 @@
-import "@mantine/core/styles.css";
 import "./index.css"
 import { LayoutProps } from "rakkasjs"
 export default function Layout({children}: LayoutProps) {
