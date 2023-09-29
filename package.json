@@ -63,6 +63,7 @@
     "vitest": "^0.34.6"
   },
   "dependencies": {
+    "@auth/core": "^0.16.0",
     "@hattip/cookie": "^0.0.35",
     "cmdk": "^0.2.0",
     "dayjs": "^1.11.10",
