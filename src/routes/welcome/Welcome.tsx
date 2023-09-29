@@ -16,11 +16,11 @@ export function WelcomeSection({}: WelcomePageProps) {
           </p>
           <Features />
 
-          <div className="flex  gap-2">
-            <Link href="/dashboard" className="btn btn-secondary-focus">
+          <div className="flex  gap-10">
+            <Link href="/dashboard" className="btn btn-primary">
               Get Started
             </Link>
-            <Link href="/login" className="btn btn-secondary-focus">
+            <Link href="/login" className="btn btn-primary">
               Or login to continue
             </Link>
           </div>

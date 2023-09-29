@@ -34,7 +34,7 @@ export function FeatureCard({title,description}:FeatureCardProps){
 return (
   <div className="card md:w-[35%] bg-base-100 shadow-xl elevation-5 hover:scale-[99%]">
     <div className="card-body p-5 w-full">
-      <h2 className="card-title text-accent">{title}</h2>
+      <h2 className="card-title ">{title}</h2>
       <p className="card-compact text-sm w-full p-0 ">{description}</p>
         </div>
   </div>
