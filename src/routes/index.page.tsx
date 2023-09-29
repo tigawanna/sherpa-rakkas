@@ -1,10 +1,9 @@
-import { Button } from "@mantine/core";
+import { WelcomeSection } from "./welcome/Welcome";
 
 export default function HomePage() {
 	return (
-		<main>
-			<h1>Hello world!</h1>
-			<Button style={{ backgroundColor: "yellowgreen" }}>Click me</Button>
-		</main>
-	);
+    <main className="flex min-h-screen flex-col items-center justify-center bg-primary/10 ">
+      <WelcomeSection />
+    </main>
+  );
 }
